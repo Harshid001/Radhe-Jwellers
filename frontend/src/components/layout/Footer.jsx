@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center">
-              <img src="/logo.svg" alt="Radhe Jewellers" className="h-12 sm:h-14 lg:h-16 w-auto object-contain" />
+              <img src="/logo.svg" alt="Radhe Jewellers" className="h-14 sm:h-16 lg:h-20 w-auto object-contain" />
             </Link>
             <p className="text-secondary-mutedText leading-relaxed">
               Serving our community with trust and excellence in gold and silver jewellery since 1995. Quality and integrity are our hallmarks.

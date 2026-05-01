@@ -23,7 +23,7 @@ const PublicNavbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center group">
-              <img src="/logo.svg" alt="Radhe Jewellers" className="h-10 sm:h-12 lg:h-14 w-auto object-contain" />
+              <img src="/logo.svg" alt="Radhe Jewellers" className="h-12 sm:h-14 lg:h-16 w-auto object-contain" />
             </Link>
           </div>
 
