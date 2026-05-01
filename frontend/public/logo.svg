@@ -1,0 +1,60 @@
+<svg width="100%" height="100%" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Inter:wght@400&amp;display=swap');
+      .logo-text { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 600; fill: #1A1A1A; }
+      .logo-subtext { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; fill: #666666; letter-spacing: 0.38em; text-transform: uppercase; }
+    </style>
+    <!-- Soft, rich gold gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2E3C6" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#FFF2CD" />
+      <stop offset="75%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#E6C762" />
+    </linearGradient>
+    <!-- Premium subtle glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComponentTransfer in="blur" result="subtleBlur">
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="subtleBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- High-End Detailed Diamond Icon -->
+  <g transform="translate(15, 10) scale(0.8)" stroke="url(#goldGrad)" stroke-width="1.2" fill="none" filter="url(#glow)">
+    <!-- Outer Silhouette -->
+    <polygon points="30,20 70,20 90,45 50,95 10,45" stroke-width="2" stroke-linejoin="round" />
+    
+    <!-- Girdle Horizontal Line -->
+    <line x1="10" y1="45" x2="90" y2="45" stroke-linejoin="round" />
+
+    <!-- Crown Inner Facets (Top) -->
+    <polyline points="30,20 25,35 10,45" stroke-linejoin="round" />
+    <polyline points="70,20 75,35 90,45" stroke-linejoin="round" />
+    <polyline points="30,20 40,35 30,45" stroke-linejoin="round" />
+    <polyline points="70,20 60,35 70,45" stroke-linejoin="round" />
+    <polygon points="50,20 40,35 50,45 60,35" stroke-linejoin="round" />
+    <line x1="25" y1="35" x2="40" y2="35" stroke-linejoin="round" />
+    <line x1="60" y1="35" x2="75" y2="35" stroke-linejoin="round" />
+
+    <!-- Pavilion Inner Facets (Bottom) -->
+    <polygon points="50,45 40,65 50,80 60,65" stroke-linejoin="round" />
+    <line x1="10" y1="45" x2="40" y2="65" stroke-linejoin="round" />
+    <line x1="30" y1="45" x2="40" y2="65" stroke-linejoin="round" />
+    <line x1="90" y1="45" x2="60" y2="65" stroke-linejoin="round" />
+    <line x1="70" y1="45" x2="60" y2="65" stroke-linejoin="round" />
+    <line x1="40" y1="65" x2="50" y2="95" stroke-linejoin="round" />
+    <line x1="60" y1="65" x2="50" y2="95" stroke-linejoin="round" />
+    <line x1="50" y1="80" x2="50" y2="95" stroke-linejoin="round" />
+  </g>
+
+  <!-- Premium Typography -->
+  <text x="110" y="54" class="logo-text">Radhe</text>
+  <text x="114" y="78" class="logo-subtext">JEWELLERS</text>
+</svg>
