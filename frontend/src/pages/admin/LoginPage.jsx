@@ -40,21 +40,21 @@ const LoginPage = () => {
     <div className="min-h-screen bg-secondary-bg flex items-center justify-center p-4">
       <div className="max-w-md w-full animate-in fade-in zoom-in duration-500">
         {/* Brand */}
-        <div className="text-center mb-10">
-          <Link to="/" className="inline-flex items-center space-x-3 mb-6">
-            <div className="bg-primary-gold p-3 rounded-2xl shadow-lg shadow-primary-gold/20">
-              <Gem className="h-8 w-8 text-white" />
+        <div className="text-center mb-8 sm:mb-10">
+          <Link to="/" className="inline-flex items-center space-x-3 mb-6 transform transition-transform hover:scale-105">
+            <div className="bg-primary-gold p-2.5 sm:p-3 rounded-2xl shadow-lg shadow-primary-gold/20">
+              <Gem className="h-7 w-7 sm:h-8 sm:w-8 text-white" />
             </div>
-            <span className="text-3xl font-bold font-['Outfit'] text-secondary-darkText tracking-tight">
+            <span className="text-2xl sm:text-3xl font-bold font-['Outfit'] text-secondary-darkText tracking-tight">
               Radhe <span className="text-primary-gold">Jewellers</span>
             </span>
           </Link>
-          <h1 className="text-2xl font-bold text-secondary-darkText">Admin Login</h1>
-          <p className="text-secondary-mutedText mt-2">Manage your shop, customers, and transactions</p>
+          <h1 className="text-xl sm:text-2xl font-bold text-secondary-darkText">Admin Login</h1>
+          <p className="text-sm sm:text-base text-secondary-mutedText mt-2">Manage your shop, customers, and transactions</p>
         </div>
 
         {/* Login Card */}
-        <div className="card p-10 shadow-2xl shadow-primary-gold/5 border-primary-gold/10">
+        <div className="card p-6 sm:p-10 shadow-2xl shadow-primary-gold/5 border border-primary-gold/10">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
@@ -67,7 +67,7 @@ const LoginPage = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="admin@radhejewellers.com"
-                className="pl-7"
+                inputClassName="pl-12"
                 required
               />
             </div>
@@ -83,13 +83,13 @@ const LoginPage = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="pl-7"
+                inputClassName="pl-12 pr-12"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute top-[34px] right-3 p-1.5 text-secondary-mutedText hover:text-primary-gold transition-colors"
+                className="absolute bottom-2.5 right-3 p-1.5 text-secondary-mutedText hover:text-primary-gold transition-colors z-20"
               >
                 {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
               </button>
@@ -106,7 +106,7 @@ const LoginPage = () => {
             <Button
               type="submit"
               loading={isSubmitting}
-              className="w-full py-4 text-lg"
+              className="w-full py-3.5 sm:py-4 text-base sm:text-lg"
               icon={ShieldCheck}
             >
               Secure Login

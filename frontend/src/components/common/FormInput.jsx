@@ -5,6 +5,7 @@ const FormInput = ({
   error, 
   type = 'text', 
   className = '', 
+  inputClassName = '',
   id,
   required = false,
   ...props 
@@ -26,6 +27,7 @@ const FormInput = ({
               ? 'border-danger focus:ring-danger/20' 
               : 'border-border focus:ring-primary-gold/20 focus:border-primary-gold'}
             focus:ring-4
+            ${inputClassName}
           `}
           {...props}
         />
