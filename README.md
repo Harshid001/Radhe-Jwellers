@@ -1,133 +1,155 @@
-# 💊 MediPriceWatch
+# PayFair
 
-> **"Medicine Shouldn't Cost You Everything."** — Democratizing pharmaceutical data to empower patients, providers, and employers with transparency and fair pricing.
+PayFair is a full-stack B2B invoice financing platform for suppliers, buyers, and financiers.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://mediprice-five.vercel.app/about)
-[![GitHub Repository](https://img.shields.io/badge/Source-Code-blue?style=for-the-badge&logo=github)](https://github.com/Harshid001/mediPrice1)
-[![Video Demo](https://img.shields.io/badge/Video-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/lLRxQ-kRn2o?si=Frj6gtsMe13cxEj5)
+## Visual Overview
 
----
+### Landing & Core Platform
+![Hero Page](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203537_lrcxmg.png)
 
-## 🌟 Overview
+<p align="center">
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203414_mi2sxq.png" width="45%" alt="Dashboard" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203444_dbtteo.png" width="45%" alt="Invoices" />
+</p>
 
-MediPriceWatch is a premium healthcare transparency platform designed to combat high drug prices. By providing real-time price comparisons, generic alternative mapping, and regulatory guides, we help users save up to 80% on their medication costs.
+### Key Features
+<p align="center">
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203435_r3bxmi.png" width="45%" alt="Upload Invoice" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203450_eote1j.png" width="45%" alt="Buyer Directory" />
+</p>
 
-![Hero Banner](https://res.cloudinary.com/dh0xawlig/image/upload/v1778065370/Screenshot_2026-05-06_161814_g2g0bn.png)
+<p align="center">
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203448_o2odrj.png" width="45%" alt="Campaigns" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203452_bjlp47.png" width="45%" alt="Savings Calculator" />
+</p>
 
-### 🚀 Key Metrics
-- **12M+** Savings Found to Date
-- **4.2M+** Prices Tracked Daily
-- **850+** Verified Pharmacies
-- **45%** Average Lower Prices via Generics
+### Experience & Pricing
+![How It Works](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203531_ebfzvz.png)
+![Pricing Plans](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203428_edha6h.png)
 
----
-
-## ✨ Core Features
-
-### 🧠 SmartRx Auto-Optimizer
-Scan your handwritten or digital prescriptions to instantly find safe, bioequivalent generic alternatives. Our AI-driven processing maps brand names to molecules in seconds.
-
-![SmartRx Optimizer](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065368/Screenshot_2026-05-06_162129_nn2rl1.png)
-
-### ⚖️ Price Comparison Engine
-A high-fidelity comparison tool that displays Brand MRP vs. Generic Prices, highlighting massive savings opportunities (often exceeding 80%) and real-time stock status.
-
-![Price Comparison](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065365/Screenshot_2026-05-06_162028_o2bsgi.png)
-
-### 📊 Mission & Transparency
-We are on a mission to democratize pharmaceutical data, ensuring every patient and provider has access to fair, market-driven pricing information.
-
-![Transparency Stats](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065366/Screenshot_2026-05-06_162110_kvc9cm.png)
-
-### 📚 Educational Ecosystem
-- **Generic Guide**: In-depth analysis of drug efficacy and bioequivalence.
-- **Classification Guide**: Clear breakdown of Schedule H, H1, X, and OTC medications.
-- **Policy Insights**: Stay updated with the latest pharmaceutical regulations and legal watches.
-
-| **Classification Guide** | **Generic Medicine Guide** |
-| :---: | :---: |
-| ![Classification](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065367/Screenshot_2026-05-06_162138_v3zhi6.png) | ![Guide](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065365/Screenshot_2026-05-06_162044_fop7td.png) |
-
-#### 📰 Insights & Policy
-Stay informed on drug pricing regulations, clinical breakthroughs, and market analysis.
-
-![Insights](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065365/Screenshot_2026-05-06_162105_wcx8zn.png)
+### User Management
+<p align="center">
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203501_zp4ati.png" width="45%" alt="Settings" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203518_wruj82.png" width="45%" alt="Notifications" />
+</p>
 
 
----
+## Tech Stack
 
-## 🏢 Enterprise & Community
+- Frontend: React 18, Vite 5, React Router, Tailwind CSS 3, Axios, Lucide, Recharts
+- Backend: Node.js ESM, Express, Mongoose, JWT auth, Passport OAuth scaffold, optional Redis rate limiting
+- Database: MongoDB with Mongoose models for users, invoices, bids, transactions, disputes, campaigns, notifications, support tickets, and bug reports
 
-### Enterprise-Grade Solutions
-Advanced compliance tools, market analysis, and PBM (Pharmacy Benefit Manager) metrics designed for healthcare organizations.
+## Setup
 
-![Enterprise](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065365/Screenshot_2026-05-06_162053_mydnvp.png)
+Run these from PowerShell at the project root:
 
-### Solutions for Everyone
-Tailored experiences for Patients, Employers, Providers, and Regulators.
-
-![Solutions](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065365/Screenshot_2026-05-06_162039_fdpmry.png)
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- **Framework**: [Next.js 16 (Canary/Beta)](https://nextjs.org/)
-- **UI Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-
-### Backend
-- **Runtime**: [Node.js](https://nodejs.org/)
-- **Framework**: [Express.js](https://expressjs.com/)
-- **Database**: [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/)
-- **Security**: JWT, Bcrypt, Helmet, Express Rate Limit
-- **Validation**: Zod
-
----
-
-## 🛠 Installation & Setup
-
-### Prerequisites
-- Node.js 18+
-- MongoDB instance (Local or Atlas)
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Harshid001/mediPrice1.git
-cd mediPrice1
+```powershell
+Set-Location -LiteralPath 'D:\NewVolumeE\Summer VacationProject-2\payfair'
+npm.cmd install
+npm.cmd run install:all
 ```
 
-### 2. Backend Setup
-```bash
-cd backend
-npm install
-# Configure .env with MONGO_URI and JWT_SECRET
-npm run seed    # Seed database with initial medicine data
-npm run dev     # Start development server
+Copy env files:
+
+```powershell
+Copy-Item backend\.env.example backend\.env
+Copy-Item frontend\.env.example frontend\.env
 ```
 
-### 3. Frontend Setup
-```bash
-cd ../frontend
-npm install
-npm run dev     # Start Next.js on http://localhost:3000
+Make sure MongoDB is running locally, or update `backend\.env` with your `MONGODB_URI`.
+
+## Environment
+
+Do not commit real `.env` files. The repository contains placeholder-only examples:
+
+- `D:\NewVolumeE\Summer VacationProject-2\payfair\.env.example`
+- `D:\NewVolumeE\Summer VacationProject-2\payfair\backend\.env.example`
+- `D:\NewVolumeE\Summer VacationProject-2\payfair\frontend\.env.example`
+
+Backend key variables:
+
+- `NODE_ENV=development`
+- `PORT=5000`
+- `MONGODB_URI=mongodb://localhost:27017/payfair`
+- `MONGO_URI=mongodb://localhost:27017/payfair` optional alias
+- `DATABASE_URL=mongodb://localhost:27017/payfair` optional alias
+- `JWT_SECRET=replace-with-a-strong-secret-at-least-32-characters`
+- `JWT_REFRESH_SECRET=replace-with-a-strong-refresh-secret-at-least-32-characters`
+- `JWT_EXPIRES_IN=7d`
+- `FRONTEND_URL=http://localhost:5173`
+- `BACKEND_URL=http://localhost:5000`
+- `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_CALLBACK_URL` only when Google OAuth is enabled
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_FROM` for production email delivery
+- `REDIS_URL` optional. If omitted, rate limiting uses in-memory storage.
+- `CLOUDINARY_*` or `AWS_*` variables only when switching upload storage away from local disk
+
+Frontend key variable:
+
+- `VITE_API_URL=http://localhost:5000/api/v1`
+- `VITE_APP_ENV=development`
+- `VITE_ENABLE_ANALYTICS=false`
+
+Production startup validates required backend configuration. In production, `JWT_SECRET` must be non-placeholder text with at least 32 characters, database and public URLs must be set, and SMTP values must be present for auth email flows.
+
+## Run
+
+Run both apps:
+
+```powershell
+npm.cmd run dev
 ```
 
----
+Run separately:
 
-## 🚨 Violation Reporting
-Witnessed a price violation? Report it confidentially through our platform.
+```powershell
+npm.cmd run dev:backend
+npm.cmd run dev:frontend
+```
 
-![Report Violation](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065352/Screenshot_2026-05-06_162149_thi2ja.png)
+Direct folder commands:
 
----
+```powershell
+Set-Location backend
+npm.cmd run dev
 
-## 🤝 Support & Contact
-Have questions or interested in a partnership? Our team is here to help.
+Set-Location ..\frontend
+npm.cmd run dev
+```
 
-![Contact](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778065366/Screenshot_2026-05-06_162121_kk7bfv.png)
+## Seed Data
 
-*Made with ❤️ for affordable healthcare.*
+This resets the configured MongoDB database and creates demo accounts:
+
+```powershell
+npm.cmd run seed
+```
+
+Seeded credentials:
+
+- Supplier: `supplier@payfair.com` / `password123`
+- Buyer: `buyer@payfair.com` / `password123`
+- Financier: `financier@payfair.com` / `password123`
+
+## Build
+
+```powershell
+npm.cmd run build
+```
+
+## Test and Lint
+
+```powershell
+npm.cmd run test
+npm.cmd run lint
+npm.cmd run test:coverage
+```
+
+See `D:\NewVolumeE\Summer VacationProject-2\payfair\TESTING.md` for the automated and manual smoke checklist.
+
+## Troubleshooting
+
+- Use `npm.cmd`, not bare `npm`, in PowerShell if command resolution is inconsistent.
+- If the backend starts but rate limiting logs Redis warnings, remove `REDIS_URL` for local development or start Redis.
+- If frontend API calls fail in dev, confirm backend is on `http://localhost:5000` and `frontend\.env` points to `/api/v1` or `http://localhost:5000/api/v1`.
+- Uploaded files are stored in `backend\uploads` and ignored by Git.
