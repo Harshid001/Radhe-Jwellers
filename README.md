@@ -14,7 +14,7 @@ PayFair is a full-stack B2B invoice financing platform for suppliers, buyers, an
 
 ### Key Features
 <p align="center">
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203531_ebfzvz.png" width="45%" alt="Upload Invoice" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203518_wruj82.png" width="45%" alt="Notifications" />
   <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203450_eote1j.png" width="45%" alt="Buyer Directory" />
 </p>
 
@@ -30,9 +30,8 @@ PayFair is a full-stack B2B invoice financing platform for suppliers, buyers, an
 ### User Management
 <p align="center">
   <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203501_zp4ati.png" width="45%" alt="Settings" />
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203518_wruj82.png" width="45%" alt="Notifications" />
+  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203531_ebfzvz.png" width="45%" alt="Upload Invoice" />
 </p>
-
 
 ## Tech Stack
 
