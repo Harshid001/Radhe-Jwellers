@@ -1,154 +1,183 @@
-# PayFair
+# Radhe Jwellers
 
-PayFair is a full-stack B2B invoice financing platform for suppliers, buyers, and financiers.
+Welcome to **Radhe Jwellers** - Your trusted source for exquisite jewelry and premium accessories.
 
-## Visual Overview
+## 🌟 About Us
 
-### Landing & Core Platform
-![Hero Page](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203537_lrcxmg.png)
+Radhe Jwellers is a full-featured e-commerce platform dedicated to showcasing and selling high-quality jewelry pieces. From traditional designs to contemporary collections, we bring elegance and craftsmanship to every customer experience.
 
-<p align="center">
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203414_mi2sxq.png" width="45%" alt="Dashboard" />
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203444_dbtteo.png" width="45%" alt="Invoices" />
-</p>
+## 🎯 Features
 
-### Key Features
-<p align="center">
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203518_wruj82.png" width="45%" alt="Notifications" />
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203450_eote1j.png" width="45%" alt="Buyer Directory" />
-</p>
+- **Elegant Product Showcase** - Browse our curated collection of jewelry and accessories
+- **Responsive Design** - Seamless experience across all devices
+- **User-Friendly Interface** - Intuitive navigation and product discovery
+- **Secure Transactions** - Safe and secure checkout process
+- **Customer Accounts** - Personalized user profiles and order history
+- **Product Search & Filtering** - Find exactly what you're looking for
+- **Real-Time Inventory** - Always up-to-date stock information
 
-<p align="center">
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203448_o2odrj.png" width="45%" alt="Campaigns" />
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203452_bjlp47.png" width="45%" alt="Savings Calculator" />
-</p>
+## 💻 Tech Stack
 
-### Experience & Pricing
-![How It Works](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339332/Screenshot_2026-05-09_203435_r3bxmi.png)
-![Pricing Plans](https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203428_edha6h.png)
+- **Frontend**: React 18, Vite 5, React Router, Tailwind CSS 3, Axios, Lucide Icons
+- **Backend**: Node.js, Express, Mongoose, JWT Authentication, MongoDB
+- **Database**: MongoDB with collections for products, users, orders, and more
+- **Styling**: Tailwind CSS 3 for modern, responsive design
 
-### User Management
-<p align="center">
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339333/Screenshot_2026-05-09_203501_zp4ati.png" width="45%" alt="Settings" />
-  <img src="https://res.cloudinary.com/dh0xawlig/image/upload/q_auto/f_auto/v1778339334/Screenshot_2026-05-09_203531_ebfzvz.png" width="45%" alt="Upload Invoice" />
-</p>
+## 🚀 Getting Started
 
-## Tech Stack
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB (local or cloud instance)
 
-- Frontend: React 18, Vite 5, React Router, Tailwind CSS 3, Axios, Lucide, Recharts
-- Backend: Node.js ESM, Express, Mongoose, JWT auth, Passport OAuth scaffold, optional Redis rate limiting
-- Database: MongoDB with Mongoose models for users, invoices, bids, transactions, disputes, campaigns, notifications, support tickets, and bug reports
+### Installation
 
-## Setup
-
-Run these from PowerShell at the project root:
-
-```powershell
-Set-Location -LiteralPath 'D:\NewVolumeE\Summer VacationProject-2\payfair'
-npm.cmd install
-npm.cmd run install:all
+1. **Clone the repository**
+```bash
+git clone https://github.com/Harshid001/Radhe-Jwellers.git
+cd Radhe-Jwellers
 ```
 
-Copy env files:
-
-```powershell
-Copy-Item backend\.env.example backend\.env
-Copy-Item frontend\.env.example frontend\.env
+2. **Install dependencies**
+```bash
+npm install
+npm run install:all
 ```
 
-Make sure MongoDB is running locally, or update `backend\.env` with your `MONGODB_URI`.
-
-## Environment
-
-Do not commit real `.env` files. The repository contains placeholder-only examples:
-
-- `D:\NewVolumeE\Summer VacationProject-2\payfair\.env.example`
-- `D:\NewVolumeE\Summer VacationProject-2\payfair\backend\.env.example`
-- `D:\NewVolumeE\Summer VacationProject-2\payfair\frontend\.env.example`
-
-Backend key variables:
-
-- `NODE_ENV=development`
-- `PORT=5000`
-- `MONGODB_URI=mongodb://localhost:27017/payfair`
-- `MONGO_URI=mongodb://localhost:27017/payfair` optional alias
-- `DATABASE_URL=mongodb://localhost:27017/payfair` optional alias
-- `JWT_SECRET=replace-with-a-strong-secret-at-least-32-characters`
-- `JWT_REFRESH_SECRET=replace-with-a-strong-refresh-secret-at-least-32-characters`
-- `JWT_EXPIRES_IN=7d`
-- `FRONTEND_URL=http://localhost:5173`
-- `BACKEND_URL=http://localhost:5000`
-- `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_CALLBACK_URL` only when Google OAuth is enabled
-- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_FROM` for production email delivery
-- `REDIS_URL` optional. If omitted, rate limiting uses in-memory storage.
-- `CLOUDINARY_*` or `AWS_*` variables only when switching upload storage away from local disk
-
-Frontend key variable:
-
-- `VITE_API_URL=http://localhost:5000/api/v1`
-- `VITE_APP_ENV=development`
-- `VITE_ENABLE_ANALYTICS=false`
-
-Production startup validates required backend configuration. In production, `JWT_SECRET` must be non-placeholder text with at least 32 characters, database and public URLs must be set, and SMTP values must be present for auth email flows.
-
-## Run
-
-Run both apps:
-
-```powershell
-npm.cmd run dev
+3. **Setup environment files**
+```bash
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
 ```
 
-Run separately:
+4. **Configure environment variables**
 
-```powershell
-npm.cmd run dev:backend
-npm.cmd run dev:frontend
+**Backend (.env)**:
+```
+NODE_ENV=development
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/radhe-jwellers
+JWT_SECRET=your-secret-key-min-32-characters
+JWT_REFRESH_SECRET=your-refresh-secret-min-32-characters
+FRONTEND_URL=http://localhost:5173
+BACKEND_URL=http://localhost:5000
 ```
 
-Direct folder commands:
-
-```powershell
-Set-Location backend
-npm.cmd run dev
-
-Set-Location ..\frontend
-npm.cmd run dev
+**Frontend (.env)**:
+```
+VITE_API_URL=http://localhost:5000/api/v1
+VITE_APP_ENV=development
 ```
 
-## Seed Data
+## 📦 Running the Project
 
-This resets the configured MongoDB database and creates demo accounts:
+### Development Mode
 
-```powershell
-npm.cmd run seed
+**Run both frontend and backend:**
+```bash
+npm run dev
 ```
 
-Seeded credentials:
-
-- Supplier: `supplier@payfair.com` / `password123`
-- Buyer: `buyer@payfair.com` / `password123`
-- Financier: `financier@payfair.com` / `password123`
-
-## Build
-
-```powershell
-npm.cmd run build
+**Run individually:**
+```bash
+npm run dev:backend
+npm run dev:frontend
 ```
 
-## Test and Lint
+### Production Build
 
-```powershell
-npm.cmd run test
-npm.cmd run lint
-npm.cmd run test:coverage
+```bash
+npm run build
 ```
 
-See `D:\NewVolumeE\Summer VacationProject-2\payfair\TESTING.md` for the automated and manual smoke checklist.
+### Seed Database
 
-## Troubleshooting
+Populate the database with sample data:
+```bash
+npm run seed
+```
 
-- Use `npm.cmd`, not bare `npm`, in PowerShell if command resolution is inconsistent.
-- If the backend starts but rate limiting logs Redis warnings, remove `REDIS_URL` for local development or start Redis.
-- If frontend API calls fail in dev, confirm backend is on `http://localhost:5000` and `frontend\.env` points to `/api/v1` or `http://localhost:5000/api/v1`.
-- Uploaded files are stored in `backend\uploads` and ignored by Git.
+## 📂 Project Structure
+
+```
+Radhe-Jwellers/
+├── backend/              # Express.js API server
+│   ├── models/          # MongoDB schemas
+│   ├── routes/          # API endpoints
+│   ├── controllers/      # Business logic
+│   └── config/          # Configuration files
+├── frontend/            # React application
+│   ├── src/
+│   │   ├── components/  # React components
+│   │   ├── pages/       # Page components
+│   │   ├── services/    # API services
+│   │   └── styles/      # Tailwind styles
+│   └── public/          # Static assets
+└── package.json         # Root dependencies
+```
+
+## 🧪 Testing & Linting
+
+```bash
+npm run test
+npm run lint
+npm run test:coverage
+```
+
+## 🔧 Troubleshooting
+
+- **MongoDB Connection Issues**: Ensure MongoDB is running locally or update `MONGODB_URI` in `.env`
+- **Port Already in Use**: Change the `PORT` in backend `.env` (default: 5000)
+- **CORS Errors**: Verify `FRONTEND_URL` matches your frontend URL
+- **Frontend API Calls Fail**: Check that `VITE_API_URL` points to your backend correctly
+
+## 📋 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Run both backend and frontend in development mode |
+| `npm run dev:backend` | Run backend only |
+| `npm run dev:frontend` | Run frontend only |
+| `npm run build` | Build for production |
+| `npm run seed` | Populate database with sample data |
+| `npm run test` | Run tests |
+| `npm run lint` | Run ESLint |
+
+## 📝 Environment Variables
+
+### Backend
+- `NODE_ENV` - Environment (development/production)
+- `PORT` - Server port (default: 5000)
+- `MONGODB_URI` - MongoDB connection string
+- `JWT_SECRET` - JWT signing secret (min 32 chars)
+- `JWT_REFRESH_SECRET` - JWT refresh secret (min 32 chars)
+- `FRONTEND_URL` - Frontend application URL
+- `BACKEND_URL` - Backend application URL
+
+### Frontend
+- `VITE_API_URL` - Backend API base URL
+- `VITE_APP_ENV` - Application environment
+- `VITE_ENABLE_ANALYTICS` - Analytics flag (optional)
+
+## 🎨 Design System
+
+Built with Tailwind CSS 3 for a modern, responsive design that works seamlessly across all devices.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest improvements
+- Submit pull requests
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 📞 Support
+
+For issues, questions, or suggestions, please open an issue on the GitHub repository.
+
+---
+
+**Made with ❤️ by Radhe Jwellers Team**
