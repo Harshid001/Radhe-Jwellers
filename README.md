@@ -180,4 +180,4 @@ For issues, questions, or suggestions, please open an issue on the GitHub reposi
 
 ---
 
-**Made with ❤️ by Radhe Jwellers Team**
+**Made by Harshid Soni[https://github.com/Harshid001]**
